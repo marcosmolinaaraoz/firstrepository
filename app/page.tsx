@@ -2,113 +2,107 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        {/* <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p> */}
+    <main className="flex flex-col p-24 items-center">
+      <h1 className="text-2xl text-center font-bold mt-2 mb-4">
+        Citroen Xsara Picasso 2.0 Nafta 2011
+      </h1>
+      <div className="flex flex-row w-1/2 gap-8 items-center justify-around py-6 border border-solid border-gray-300 rounded-md shadow-md mt-7">
+        <div id="texto">
+          <h1 className="text-base font-bold mb-4 p-1">Repuestos</h1>
+          <ul className="list-disc ml-4 text-base">
+          <li className="mb-3">Junta (JGOX2) Tapa Valv. Esc</li>
+              <li className="mb-3">Reten Arbol de Levas Adm</li>
+              <li className="mb-3">Kit Distribución</li>
+              <li className="mb-3">Bomba de Agua</li>
+              <li className="mb-3">Amortiguador Trasero</li>
+              <li className="mb-3">Botador Hidráulico</li>
+          </ul>
+        </div>
+        <Image
+          className="rounded-lg ml-10"
+          src="/auto.jpg"
+          alt="Next.js Logo"
+          width={250}
+          height={50}
+          priority
+        />
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <div className="flex flex-col gap-8 justify-item-center">
-          <div className="flex flex-row gap-8 items-center justifi-item-center">
-            
-            <div className="p-6 rounded-md shadow-md">
-              <h1 className="text-2xl font-bold mb-4 text-center">
-                Repuestos Citroen Xsara 2.0 nafta 2011
-              </h1>
-              <ul>
-                <li className="text-sm">Junta (JGOX2) Tapa Valv. Esc Adm Sabo</li>
-                <li className="text-sm">Reten Arbol de Levas 405/Partner</li>
-                <li className="text-sm">Reten Arbol de Levas Adm</li>
-                <li className="text-sm">Kit Distribución SKF Peugeot 307/308</li>
-                <li className="text-sm">Bomba de Agua SKF VKPA83650</li>
-                <li className="text-sm">Amortiguador Trasero</li>
-                <li className="text-sm">Botador Hidráulico Original</li>
-              </ul>
+      <h1 className="text-base font-bold mb-4 gap-4 p-10">Provedores</h1>
+      <div className="grid grid-cols-3 gap-10 h-16">
+        <div className="flex flex-col gap-8 p-6 items-center border border-solid border-gray-300 rounded-md shadow-md mt-7">
+          <h1 className="text-base font-bold">Gunter San Juan</h1>
+          <div className="flex flex-row gap-20" id="lista gunter">
+            <ul className="list-disc ml-4 text-base">
+              <li className="mb-3">Junta (JGOX2) Tapa Valv. Esc</li>
+              <li className="mb-3">Reten Arbol de Levas Adm</li>
+              <li className="mb-3">Reten Arbol de Levas Adm</li>
+              <li className="mb-3">Kit Distribución</li>
+              <li className="mb-3">Kit Distribución </li> 
+              <li className="mb-3">Bomba de Agua</li>
+              <li className="mb-3">Amortiguador Trasero</li>
+              <li className="mb-3">Botador Hidráulico</li>
+            </ul>
+            <ul className="ml-4 text-base">
+              <li className="mb-3">Orig. 110.00</li>
+              <li className="mb-3">Orig. 70.000 c/u</li>
+              <li className="mb-3">Alt. 8.000 c/u</li>
+              <li className="mb-3">Orig. 281.000</li>
+              <li className="mb-3">Alt. 122.900</li>
+              <li className="mb-3">Alt. 90.100</li>
+              <li className="mb-3">Alt. 106.000</li>
+              <li className="mb-3">Orig. 47.800 c/u</li>
+            </ul>
+          </div>
+        </div>
+        <div id="gl autopartes">
+          <div className="flex flex-col gap-8 p-6 items-center border border-solid border-gray-300 rounded-md shadow-md mt-7">
+            <h1 className="text-base font-bold">GL AUTOPARTES</h1>
+            <div className="flex flex-row gap-20">
+            <ul className="list-disc ml-4 text-base">
+              <li className="mb-3">Junta (JGOX2) Tapa Valv. Esc</li>
+              <li className="mb-3">Reten Arbol de Levas Adm</li>
+              <li className="mb-3">Reten Arbol de Levas Adm</li>
+              <li className="mb-3">Kit Distribución</li>
+              <li className="mb-3">Bomba de Agua</li>
+              <li className="mb-3">Amortiguador Trasero</li>
+              <li className="mb-3">Botador Hidráulico</li>
+            </ul>
+            <ul className="ml-4 text-base">
+              <li className="mb-3">-</li>
+              <li className="mb-3">Alt. 21.000 c/u</li>
+              <li className="mb-3">Alt. 7.000 c/u</li>
+              <li className="mb-3">Alt. 180.000</li>
+              <li className="mb-3">Orig. 247.000</li>
+              <li className="mb-3">Orig. 166.000</li>
+              <li className="mb-3">-</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div id="lista peucor">
+        <div className="flex flex-col gap-8 p-6 items-center border border-solid border-gray-300 rounded-md shadow-md mt-7">
+            <h1 className="text-base font-bold">Peucor</h1>
+            <div className="flex flex-row gap-20">
+        <ul className="list-disc ml-4 text-base">
+              <li className="mb-3">Junta (JGOX2) Tapa Valv. Esc</li>
+              <li className="mb-3">Reten Arbol de Levas Adm</li>
+              <li className="mb-3">Kit Distribución </li> 
+              <li className="mb-3">Bomba de Agua</li>
+              <li className="mb-3">Amortiguador Trasero</li>
+              <li className="mb-3">Botador Hidráulico</li>
+            </ul>
+            <ul className="ml-4 text-base">
+              <li className="mb-3">Alt. 11.150</li>
+              <li className="mb-3">Alt. 21.500</li>
+              <li className="mb-3">Alt. 170.000</li>
+              <li className="mb-3">Alt. 86.000</li>
+              <li className="mb-3">Alt. 78.000 c/u</li>
+              <li className="mb-3">Orig. 22.150 c/u</li>
+            </ul>
             </div>
-            <Image
-              className="rounded-lg"
-              src="/auto.jpg"
-              alt="Next.js Logo"
-              width={250}
-              height={50}
-              priority
-            />
           </div>
         </div>
       </div>
-
-      {/* <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div> */}
     </main>
   );
 }
